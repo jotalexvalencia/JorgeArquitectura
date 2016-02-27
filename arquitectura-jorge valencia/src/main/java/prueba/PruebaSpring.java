@@ -17,8 +17,7 @@ public class PruebaSpring {
 		/*System.out.println("Mensaje: " + miBean.getMensaje());*/
 		BeanJorge miBean = (BeanJorge) factory.getBean("miBean");
 		miBean.setSuma();
-		// Sebastian
-		System.out.println("La suma es:" + miBean.getSuma());
+		System.out.println("La suma es "+miBean.getX()+" + "+miBean.getY()+" = " + miBean.getSuma());
 	}
 
 }
